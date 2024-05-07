@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("pictures/bg_img.jpg");
+    background-size: 100%; /* Dark sky bluish color */
+    box-shadow: 0px 0px 16px rgb(0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.325);
+    position: relative;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.logo {
+    position: relative;
+    top: 2em;
+    left: 2.4em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo img{
+    border-radius:2em;
+    width: 320px;
+    height: 120px;
+    box-shadow: 2px 2px 32px rgb(0, 0, 0);
+    border: 4px solid black;
+}
+
+.nav-links {
+    padding-left: 0px;
+    background-color: rgba(54, 98, 186, 0.925);
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+}
+
+.nav-links li:hover{
+    background-color: #0c356a;
+    transition-duration: 0.5s;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: min(2.7vw, 1.8em);
+    margin-inline: 0.3em;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a4e6f6 ;
+}
+
+.nav-links li:first-child, .nav-links li:first-child a{
+    background-color:white;
+    color: black;
+}
+
+.login {
+    position: relative;
+    right: 0.5em;
+    background-color: rgba(54, 98, 186, 0.925);
+    padding-inline: 1em;
+    font-size: min(2.7vw, 1.8em);
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #0c356a;
+    transition-duration: 0.5s;
+}
+
+.login a:hover{
+    color: #a4e6f6;
+}
+
+.login a{
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+
+
+.carousel {
+    overflow: hidden;
+    padding: 0px; /* Add some padding to the carousel section */
+    margin: 0px;
+    position: relative;
+    top: -43px;
+}
+
+.arrow{
+    cursor: pointer;
+    z-index: 2;
+    max-width: fit-content;
+    color: white;
+    margin-inline: 20;
+    font-size: 2em;
+    user-select: none;
+}
+
+.left-arrow{
+    position: relative;
+    top: 11.3em;
+    left: 2%;
+}
+.right-arrow{
+    position: relative;
+    left: 96%;
+    bottom: 230px;
+}
+
+.arrow:hover{
+    color: grey;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%; /* Three slides side by side */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    color: #af2222; /* Set text color to white or any contrasting color */
+    background-size: cover; /* Ensure background images cover the entire slide */
+    background-position: center; /* Center the background images */
+    box-shadow: 0px 0px 16px black;
+}
+
+.c-slide-1{
+    display: inline-block;
+    height: 560px;
+}
+
+.c-slide-h{
+    position: relative;
+    top: 25px;
+    width: fit-content;
+    padding-inline: 2px;
+    min-height: 0px;
+    font-size: 3.4em;
+    color: rgb(255, 115, 0);
+    background-color: rgba(193, 193, 193, 0.078);
+    position: relative;
+    left: 50px;
+}
+
+.c-slide-1 p{
+    position: absolute;
+    text-shadow: 0 0 6px #980b0b;
+    color: rgb(233, 233, 233);
+    left: 120px;
+    top: 130px;
+    max-width: 80%;
+    font-size: 1.3em;
+}
+
+.c-slide-2 p{
+    position: relative;
+    top: -20px;
+    left: 110px;
+    text-shadow: 0 0 6px #980b0b;
+    color: rgb(233, 233, 233);
+    max-width: 80%;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.c-slide-3 p{
+    position: relative;
+    top: -20px;
+    left: 110px;
+    text-shadow: 0 0 6px #980b0b;
+    color: rgb(233, 233, 233);
+    max-width: 80%;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.carousel a{
+    position: relative;
+    bottom: 20px;
+
+    background-color: rgba(1, 115, 255, 0.703);
+    border: 2px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
+    font-size: 2em;
+    padding: 2px 8px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.carousel a:hover{
+    background-color: #0c356a;
+}
+
+.carousel a:active{
+    text-decoration: none;
+    color: white;
+}
+
+#para-services-offered{
+    position: absolute;
+    top: 28%;
+    left: 15%;
+}
+
+.services-list{
+    position: relative;
+    /* border: 1px rgba(255, 255, 255, 0.259) solid; */
+    text-shadow: 0 0 2px rgb(66, 7, 193);
+    top: 20px;
+    left: -250px;
+    padding: 0px;
+    font-size: 1.8em;
+    line-height: 3em;
+    display: inline-block;
+    box-shadow: 4px 4px 40px black;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    background-color: rgba(16, 49, 107, 0.205);
+}
+
+.team{
+    background-image: url(pictures/bg_img.jpg);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    bottom: 86px;
+    z-index: 0;
+}
+
+.team h1{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    font-size: 2.4em;
+    background-color: rgba(0, 0, 0, 0.441);
+    color: rgb(255, 115, 0);
+    box-shadow: 0 0 24px black;
+    border-top: 2px solid rgb(30, 2, 2);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.61);
+}
+
+.team-flex{
+    display: flex;
+    position: relative;
+    margin-inline: 20px;
+    justify-content: space-evenly;
+    top: 20px;
+    gap: 20px;
+    height: 400px;
+    
+}
+
+#team-person{
+    background-color: rgba(129, 104, 104, 0.464);
+    border-radius: 15%;
+    width: 600px;
+    height: 350px;
+    transition: box-shadow 0.4s;
+}
+
+#team-person:hover{
+    box-shadow: 0px 0px 32px rgb(0, 0, 0);
+}
+
+
+#team-person img{
+    border-radius: 15%;
+    align-items:left;
+    justify-content: center;
+    width:50%;
+    height: 350px;
+}
+
+#team-person h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 381px;
+    color: rgb(254, 254, 254);
+    background-color: rgba(0, 0, 0, 0.777);
+    max-width: 130px;
+    padding-inline: 175.5px;
+    border-radius: 2em 2em 0 0;
+    font-size: 1.9em;
+    white-space: nowrap;
+}
+
+#team-person p{
+    position: relative;
+    color: rgba(255, 255, 255, 0.444);
+    text-shadow: 0px 0px 4px rgb(188, 148, 148);
+    bottom: 400px;
+    width: 240px;
+    left: 250px;
+    font-size: 1.1em;
+}
+
+#testimonials{
+    position: relative;
+    top: -86px;
+    padding: 0px 40px 40px 40px;
+    background-image: url("pictures/bg_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#testimonials h1{
+    margin: 0px;
+    position: relative;
+    top: -px;
+    text-align: center;
+    font-size: 2.4em;
+    background-color: rgba(0, 0, 0, 0.441);
+    color: rgb(255, 115, 0);
+    box-shadow: 0 0 24px black;
+    border-top: 2px solid rgb(30, 2, 2);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.61);
+}
+
+#testimonials-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-person{
+    transition: box-shadow 0.2s;
+}
+
+.testimony-person:hover{
+    box-shadow: 0px 0px 16px black;
+}
+
+.testimony-person img{
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    border: 4px solid rgb(3, 0, 0);
+}
+
+#testimony-person-1-img{
+    float: left;
+}
+
+#testimony-person-2-img{
+    float: right;
+}
+
+#testimony-person-3-img{
+    float: left;
+}
+
+#testimony-statement-1{
+    display: flex;
+    justify-content: left;
+}
+
+#testimony-statement-2{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    
+}
+
+#testimony-statement-3{
+    display: flex;
+    justify-content: left;
+}
+
+.testimony-author{
+    position: relative;
+    top: 80px;
+}
+
+#testimony-author-1{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+#testimony-author-2{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 110px;
+    margin-left: 20px;
+}
+
+#testimony-author-3{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.testimony{
+    font-size: 1.4em;
+    color: rgba(53, 7, 7, 0.444);
+    text-shadow: 0px 0px 1px rgb(58, 26, 26);
+}
+
+.testimony-person{
+    border-radius: 2em;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.368);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+#call-today{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(0, 60, 128);
+    z-index: 1;
+    top: -90px;
+    cursor:pointer;
+    user-select: none;
+    box-shadow: 0px 0px 32px black;
+}
+
+#call-today a{
+    position: relative;
+    min-width:100%;
+    right: 1px;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#call-today a:active{
+    color: rgb(147, 210, 201);
+}
+
+#footer-container{
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.078), rgba(255, 255, 255, 0.137)), url("pictures/footer_img.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.215), rgba(0, 0, 0, 0.306)), url("pictures/footer_img.jpg");
+    position: relative;
+    display: flex;
+    gap: 340px;
+    bottom: 90px;
+    height: 230px;
+    margin-bottom: 0px;
+    padding: 40px 0px 40px 0px;
+}
+
+
+
+#footer-address{
+    color: rgb(222, 203, 203);
+    font-size: 1.2em;
+    position: relative;
+    left: 80px;
+    position: relative;
+    margin: 10px;
+    width: 320px;
+}
+
+#footer-address address{
+    font-style:normal;
+    width: 250px;
+}
+
+footer{
+    position: relative;
+    bottom: 90px;
+}
+
+#map-iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(190, 91, 49);
+    height: 240px;
+    width: 240px;
+}
+
+#contact{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.187);
+    justify-content: center;
+    box-shadow: 0px 0px 8px black;
+    transition: box-shadow 0.3s;
+}
+
+#contact:hover{
+    box-shadow: 0px 0px 32px black;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+#contact li input{
+    border: none;
+    text-align: center;
+}
+
+#contact li input:active{
+    border: none;
+}
+
+#submit-button{
+    position: relative;
+    right: 20px;
+    border: 12px solid black;
+    background-color: rgb(0, 60, 128);
+    color: rgb(54, 113, 215);
+    font-size: 1em;
+    padding: 10px;
+}
+
+#submit-button:hover{
+    background-color: rgb(29, 50, 85);
+    color: rgb(83, 106, 149);
+}
+
+.contact-field{
+    margin: 10px 40px 10px 0px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+

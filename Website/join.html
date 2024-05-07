@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-join.css">
+    <link rel="icon" href="pictures/eTlogo_crop.png">
+
+    
+
+    <title>Emerging Technologies</title>
+</head>
+
+<body>
+    <article>
+        <div id="black-overlay">
+        </div>
+        <header>
+        <nav>
+
+            <div class="logo">
+                <a href="/index.html"><img src="pictures/eTlogo.jpg" alt="Company Logo for Emerging Technologies"></a>
+            </div>
+
+
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/servies.html">Services</a></li>
+                <li><a href="/courses.html">Courses</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="login"><a href="login.html">Login</a></div>
+        </nav>
+        </header>
+        <div id="status-box">
+        <div id="status-container">
+            <h3>Information</h3>
+            <div id="status-informatinon">
+            <p id="information-text">Your application has been successfully submitted. We'll contact you soon!</p>
+            <button id="status-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+        <main>
+        <div id="contact-container">
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="email" placeholder="Your email" required>
+            <input type="text" id="phone" placeholder="Phone no" required>
+            <input type="text" id="state" placeholder="State" required>
+
+            <div id="radio-button">
+            <p>Applying for: </p>
+            <p style="user-select:none;"><input type="radio" name="position-group" id="role" value="internshipPos" required>Internship</p>
+            <p style="user-select:none;"><input type="radio" name="position-group" id="other-radio" value="otherPos" required>Other position</p>
+            </div>
+
+            <p id="position-specify">If applying for a position, specify role</p>
+            <input type="text" placeholder="Role" required>
+            <div id="CV-container">
+            <p>Upload your CV: </p>
+
+                <p id="cv-text">Upload</p>
+            </div>
+
+            <button id="submit-btn">Submit</button>
+        </div>
+        </main>
+
+
+        <div id="footer-package">
+        <footer>
+            <div id="call-today">
+                <a href="call:9607771324">CALL US TODAY!</a> 
+            </div>
+        </footer>
+        <div id="footer-container">
+            <div id="footer-address">
+                <p id="footer-company-title">Emerging Technologies</p>
+                <address>
+                F5,Ashtvinayak Park C,near Croma, College Rd, Thatte Nagar, Nashik, Maharashtra 422005
+                </address>
+            </div>
+        
+            <div id="contact">
+                <ul>
+                <li><input type="text" class="contact-field" placeholder="Your name"/></li>
+                <li><input type="text" class="contact-field" placeholder="Your Email"/></li>
+                <li><input type="Contact No" class="contact-field" placeholder="Phone no/Tele"/></li>
+                <li><input type="text" class="contact-field" placeholder="Enter your query"/></li>
+                <li><input type="submit" id="submit-button" value="Submit">
+                </ul>
+            </div>
+        
+            <div id="map-iframe">
+                <iframe width="180px" height="180px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=F5,Ashtvinayak%20Park%20C,near%20Croma,back%20of%20MaharashtraBank,%20College%20Rd,%20Thatte%20Nagar,%20Nashik,%20Maharashtra%20422005+(Emerging%20Technologies)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+        </div>
+    
+        </article>
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js" type="module"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js" type="module"></script>
+        <script src="script-join.js" type="module"></script>
+
+        <!-- <script src="script-services.js"></script> -->
+    </body>
+    </html>
